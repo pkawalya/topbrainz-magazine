@@ -1,7 +1,14 @@
+import styled from '@emotion/styled'
+
 function Header(){
     return(
-        <header>Now I am a real header </header>
+       <HeaderStyled>Now I am a real header</HeaderStyled>
     )
 }
+
+const HeaderStyled = styled.header`
+    // background: #efefef;
+    background: ${props => props.theme.colors.primary};
+`
 
 export default Header
