@@ -1,8 +1,15 @@
 import styled from '@emotion/styled'
 
-function Header(){
-    return(
-       <HeaderStyled>Now I am a real header</HeaderStyled>
+function Header({ isDark }) {
+    return (
+        <HeaderStyled isDark={isDark}>
+            <div className="container">
+                <div className="logo">
+                    <img src="/images/logo.svg" alt="Logo" />
+                    <span className="logo-text"></span>
+                </div>
+            </div>
+        </HeaderStyled>
     )
 }
 
