@@ -8,8 +8,11 @@ const Home = ({ posts }) => {
     <div className="container">
       {posts.map(post => (
         <div>
-        {post.title}
+        <h3>{post.title}  </h3>
+        <br/>
+        {post.content}
         </div>
+        
       ))}
     </div>
   )
